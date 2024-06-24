@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    background-color: rgb(249, 211, 166);
+    height: 4300px;
+    padding: 10px;
+    display: grid;
+    grid-template: 'header header header' 110px
+                   'nav nav nav' 50px 
+                   'img img aside' auto        
+                   ' art1 art1 art1' auto
+                   ' art2 art2 art2' auto
+                   ' art3 art3 art3' auto
+                   'art4 art4 art4' auto
+                   'art5 art5 art5' auto
+                   'footer footer footer';
+
+    grid-template-columns: auto auto 200px;
+
+    border: 2px solid black;
+}
+
+#imagenes{
+    background-color: tomato;
+    grid-area: img;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.uno{
+    font-size: 20px;
+}
+
+.header{
+    background-color: rgb(182, 252, 76);
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 40px;
+    text-shadow: 3px 3px 6px black;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.nav{
+    background-color: beige;
+    grid-area: nav;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside{
+    background-color: plum;
+    grid-area: aside;
+    border-radius: 15px;
+    display: flex; 
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: plum;
+    grid-area: footer;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.inicio{
+    width: 1450px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ulti{
+    width: 1450px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a1{
+    grid-area: art1;
+    background-color: rgb(253, 253, 85);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.his{
+    margin-left: 30px;
+    padding: 10px;
+}
+
+.a2{
+    grid-area: art2;
+    background-color: rgb(247, 189, 82);    
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.ubi{
+    margin-left: 30px;
+    padding: 10px;
+}
+
+.a3{
+    grid-area: art3;
+    background-color: rgb(253, 253, 85);   
+    border-radius: 15px; 
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.gas{
+    margin-left: 30px;
+    padding: 10px;
+}
+
+.a4{
+    grid-area: art4;
+    background-color: rgb(247, 189, 82);    
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.trad{
+    margin-left: 30px;
+    padding: 10px;
+}
+
+.a5{
+    grid-area: art5;
+    background-color: rgb(253, 253, 85);   
+    border-radius: 15px; 
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.tur{
+    margin-left: 30px;
+    padding: 10px;
+}
+
+.as:hover{
+    width: 300px;
+    height: 200px;
+}
+
+.cuadro1{
+    border: 1px solid;
+    width: 150px;
+    height: 80px;
+    background-color: cadetblue;
+    box-shadow: 5px 5px 6px black;
+    transition: transform 5000ms;
+    background-image: url(https://storage.googleapis.com/gx-global-cms/events/0826ef95-2e94-4885-8623-c8565799bd13.png);
+    background-size: cover;
+}
+
+.cuadro1:hover{
+    cursor: pointer;
+    transform: scale(3,3);
+}
+
+.cuadro2{
+    border: 1px solid;
+    width: 150px;
+    height: 80px;
+    background-color: cadetblue;
+    box-shadow: 5px 5px 6px black;
+    transition: transform 5000ms;
+    background-image: url(https://moreliafilmfest.com/sites/default/files/inline-images/Mariposas-1.jpg);
+    background-size: cover;
+}
+
+.cuadro2:hover{
+    cursor: pointer;
+    transform: scale(3,3);
+}
+
+.cuadro3{
+    border: 1px solid;
+    width: 150px;
+    height: 80px;
+    background-color: cadetblue;
+    box-shadow: 5px 5px 6px black;
+    transition: transform 5000ms;
+    background-image: url(https://www.viajabonito.mx/wp-content/uploads/2021/08/Voladores-de-San-Pedro-13.jpg);
+    background-size: cover;
+}
+
+.cuadro3:hover{
+    cursor: pointer;
+    transform: scale(3,3);
+}
+
+.cuadro4{
+    border: 1px solid;
+    width: 150px;
+    height: 80px;
+    background-color: cadetblue;
+    box-shadow: 5px 5px 6px black;
+    transition: transform 5000ms;
+    background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQnBVLp8ox6eq_6W5R3VFB0EB-VkMW66_1g52ipRZg1CX6lhNLElA7cFYVPnXU1lCuI5QiPXUODfaLYCtbeY0jhU9MkG8ydJRt7BftmxGSVLlHTW43GgmsWdWOI786pjNcuUrgoKgOPDbA/s1600/Pirekuas+1.JPG);
+    background-size: cover;
+}
+
+.cuadro4:hover{
+    cursor: pointer;
+    transform: scale(3,3);
+}
+
+.cuadro5{
+    border: 1px solid;
+    width: 150px;
+    height: 80px;
+    background-color: cadetblue;
+    box-shadow: 5px 5px 6px black;
+    transition: transform 5000ms;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwTRSolBH737tbf3jrBSsZ1Rr49vHEM2nPpA&s);
+    background-size: cover;
+}
+
+.cuadro5:hover{
+    cursor: pointer;
+    transform: scale(3,3);
+}
